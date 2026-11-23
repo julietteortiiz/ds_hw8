@@ -1,0 +1,6 @@
+# Avoid older NumPy 2.x builds with spurious macOS matmul warnings.
+# NumPy 2.3.4+ requires Python 3.11+; use the 1.26 release on older Python.
+numpy>=1.26.4,<2; python_version < "3.11"
+numpy>=2.3.4; python_version >= "3.11"
+matplotlib>=3.6
+scikit-learn>=1.2
